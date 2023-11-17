@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+ <Attributes xmlns="urn:mace:shibboleth:2.0:attribute-map" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <Attribute name="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" id="persistent-id">
+   <AttributeDecoder xsi:type="NameIDAttributeDecoder" formatter="$Name" defaultQualifiers="true"/>
+ </Attribute>
+ <Attribute name="urn:oid:2.5.4.3"                       nameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" id="User-cn"/>
+ <Attribute name="userCertificate;binary"                nameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" id="User-uc"/>
+ <Attribute name="iamGroupId"                            nameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" id="Group-Id"/>
+</Attributes>
