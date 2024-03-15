@@ -10,5 +10,5 @@ jobs:
         with:
           token: ${{ secrets.PAT_TOKEN }}
           repository: afinoor/heart-disease-prediction
-          event-type: my-event
+          event-type: new-event
           client-payload: '{"github": ${{ toJson(github) }}}'
