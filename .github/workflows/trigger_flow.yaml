@@ -8,7 +8,7 @@ jobs:
     - uses: passeidireto/trigger-external-workflow-action@main
       env:
         PAYLOAD_AUTHOR: ${{ github.author }}
-        PAYLOAD_REVISION: "6969"
+        PAYLOAD_REVISION: "696969"
       with:
         repository: afinoor/heart-disease-prediction
         event: doc_update
