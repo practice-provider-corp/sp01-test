@@ -10,6 +10,6 @@ jobs:
         PAYLOAD_AUTHOR: ${{ github.author }}
         PAYLOAD_REVISION: "69"
       with:
-        repository: practice-provider-corp/udemy-practice
+        repository: afinoor/heart-disease-prediction
         event: doc_update
         github_pat: ${{ secrets.PAT_TOKEN }}
