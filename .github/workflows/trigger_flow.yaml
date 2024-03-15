@@ -1,6 +1,6 @@
 
 name: triggerExternal
-on: [push, workflow_dispatch]
+on: workflow_dispatch
 jobs:
   trigger:
     runs-on: ubuntu-latest
@@ -11,3 +11,4 @@ jobs:
           token: ${{ secrets.PAT_TOKEN }}
           repository: afinoor/heart-disease-prediction
           event-type: my-event
+          client-payload: '{"github": ${{ toJson(github) }}}'
